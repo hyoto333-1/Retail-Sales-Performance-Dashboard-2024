@@ -14,6 +14,17 @@ Proyek ini menganalisis performa penjualan ritel sepanjang tahun 2024 di empat k
 
 ---
 
+## 💡 Business Recommendations
+Berdasarkan analisis data di atas, berikut adalah rekomendasi strategis untuk meningkatkan performa bisnis di tahun mendatang:
+
+1. **Optimasi Profit via Kanal Mandiri:** Mengingat **Toko Offline** dan **Website** memiliki margin tertinggi (karena rendahnya biaya platform), perusahaan harus mulai mengalihkan trafik dari Marketplace ke Website melalui program loyalitas khusus web.
+2. **Targeting Milenial:** Fokuskan budget iklan pada kelompok usia **25-34 tahun** dengan gaya konten yang relevan dengan tren milenial, karena segmen ini adalah penyumbang order terbesar (~35%).
+3. **Strategi Stok Produk Lokal:** Terus kembangkan varian produk berbasis batik/lokal karena terbukti memiliki *product-market fit* yang kuat dan menjadi *top contributor* profit di semua kanal.
+4. **Logistics Cost Management:** Untuk pengiriman ke luar Jawa (Tier 3), disarankan untuk menaikkan ambang batas "Gratis Ongkir" guna menutupi rata-rata biaya kirim yang mencapai Rp26.000 agar tidak menggerus margin produk.
+5. **Konversi Non-Member:** Segmen Non-Member menyumbang profit besar (Rp5,6M). Perusahaan perlu meluncurkan kampanye *membership* yang agresif (misal: diskon pertama untuk member) untuk mengubah pembeli organik menjadi pelanggan setia.
+
+---
+
 ## 🛠️ Dataset & Feature Engineering
 Selain mengolah data mentah, saya melakukan proses *feature engineering* untuk menambahkan dimensi analisis baru yang relevan dengan kebutuhan bisnis:
 
@@ -25,42 +36,86 @@ Selain mengolah data mentah, saya melakukan proses *feature engineering* untuk m
 ---
 
 ## 🖼️ Dashboard Preview
-*Klik pada setiap kategori untuk melihat detail visualisasi.*
+*Klik pada setiap kategori di bawah ini untuk melihat detail visualisasi dashboard.*
 
 <details>
-  <summary><b>📈 Sheet 1: Profitability Overview</b></summary>
-  <p align="center">
-    <img src="screenshots/sheet1.png" width="800">
-    <br><i>Analisis profit per channel: Toko Offline memimpin dengan margin 54%.</i>
-  </p>
+  <summary><b>📈 Sheet 01: Profitability Overview</b></summary>
+  <blockquote align="center">
+    <img src="screenshot/the profit gap.png" alt="Profit Analysis" width="900">
+    <br><i>Insight: Toko Offline memimpin efisiensi biaya dengan margin keuntungan sebesar 54%.</i>
+  </blockquote>
 </details>
 
 <details>
-  <summary><b>🛍️ Sheet 2: Cultural Power (Product Analysis)</b></summary>
-  <p align="center">
-    <img src="screenshots/sheet2.png" width="800">
-  </p>
+  <summary><b>🛍️ Sheet 02: Cultural Power (Product Analysis)</b></summary>
+  <blockquote align="center">
+    <img src="screenshot/cultural powewr.png" alt="Product Analysis" width="900">
+    <br><i>Insight: Dominasi produk batik modern menunjukkan kuatnya preferensi pasar terhadap identitas lokal.</i>
+  </blockquote>
 </details>
 
 <details>
-  <summary><b>🚚 Sheet 3: Logistics Zoning</b></summary>
-  <p align="center">
-    <img src="screenshots/sheet3.png" width="800">
-  </p>
+  <summary><b>🚚 Sheet 03: Logistics Zoning Efficiency</b></summary>
+  <blockquote align="center">
+    <img src="screenshot/logistic zooning.png" alt="Logistics Analysis" width="900">
+    <br><i>Insight: Pemetaan klaster biaya pengiriman untuk optimasi margin di wilayah Luar Jawa.</i>
+  </blockquote>
 </details>
 
 <details>
-  <summary><b>🔥 Sheet 4: Peak Hours Heatmap</b></summary>
-  <p align="center">
-    <img src="screenshots/sheet4.png" width="800">
-  </p>
+  <summary><b>🔥 Sheet 04: Peak Operations Heatmap</b></summary>
+  <blockquote align="center">
+    <img src="screenshot/peak hours.png" alt="Peak Hours" width="900">
+    <br><i>Insight: Volume transaksi tertinggi terkonsentrasi pada hari Rabu di jam makan siang (11:00 - 16:00).</i>
+  </blockquote>
 </details>
 
 <details>
-  <summary><b>📊 Sheet 10: Sales Trend 2024 (Growth Analysis)</b></summary>
-  <p align="center">
-    <img src="screenshots/sheet10.png" width="800">
-  </p>
+  <summary><b>💎 Sheet 05: Brand Loyalty & Retention</b></summary>
+  <blockquote align="center">
+    <img src="screenshot/brand loyalty.png" alt="Brand Loyalty" width="900">
+    <br><i>Insight: Analisis tingkat pembelian berulang dan loyalitas konsumen terhadap brand.</i>
+  </blockquote>
+</details>
+
+<details>
+  <summary><b>👥 Sheet 06: Customer Profile (Demographics)</b></summary>
+  <blockquote align="center">
+    <img src="screenshot/customer profile.png" alt="Customer Profile" width="900">
+    <br><i>Insight: Demografi utama didominasi oleh kelompok usia 25-34 tahun (Milenial).</i>
+  </blockquote>
+</details>
+
+<details>
+  <summary><b>🌟 Sheet 07: Member Value Analysis</b></summary>
+  <blockquote align="center">
+    <img src="screenshot/member value.png" alt="Member Value" width="900">
+    <br><i>Insight: Perbandingan nilai transaksi antara pelanggan Member vs Non-Member.</i>
+  </blockquote>
+</details>
+
+<details>
+  <summary><b>💳 Sheet 08: Payment Behavior</b></summary>
+  <blockquote align="center">
+    <img src="screenshot/payment behavior.png" alt="Payment Behavior" width="900">
+    <br><i>Insight: Preferensi metode pembayaran yang paling sering digunakan oleh konsumen di berbagai channel.</i>
+  </blockquote>
+</details>
+
+<details>
+  <summary><b>💻 Sheet 09: Platform Efficiency</b></summary>
+  <blockquote align="center">
+    <img src="screenshot/platform efficiency.png" alt="Platform Efficiency" width="900">
+    <br><i>Insight: Evaluasi performa teknis dan konversi penjualan di masing-masing platform digital.</i>
+  </blockquote>
+</details>
+
+<details>
+  <summary><b>📅 Sheet 10: Annual Sales Trend 2024</b></summary>
+  <blockquote align="center">
+    <img src="screenshot/sales trend 2024.png" alt="Sales Trend" width="900">
+    <br><i>Insight: Visualisasi pertumbuhan penjualan bulanan sepanjang tahun 2024 untuk proyeksi tahun 2026.</i>
+  </blockquote>
 </details>
 
 ---
@@ -82,5 +137,4 @@ Dashboard ini dirancang secara interaktif untuk kebutuhan manajerial:
 
 ## 📬 Contact & Documentation
 Jika Anda memiliki pertanyaan mengenai metodologi atau ingin berdiskusi lebih lanjut:
-*   **Portfolio**: [Link Portfolio Anda](https://link-anda.com)
-*   **LinkedIn**: [Nama LinkedIn Anda](linkedin.com)
+*   **LinkedIn**: [Ardiansyah Putra](https://www.linkedin.com/in/ardiansyah-putra-7746a0280)
