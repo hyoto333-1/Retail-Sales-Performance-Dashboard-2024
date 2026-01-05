@@ -15,10 +15,12 @@ Proyek ini menganalisis performa penjualan ritel sepanjang tahun 2024 di empat k
 ---
 
 ## 🛠️ Dataset & Feature Engineering
-Selain data mentah, saya melakukan *feature engineering* untuk menambah kedalaman analisis:
-1.  **Waktu Hari**: Kategorisasi transaksi menjadi *Pagi, Siang, Sore,* dan *Malam*.
-2.  **is_promo**: Identifikasi transaksi saat event besar (Ramadhan, Kemerdekaan, Year-End) vs Harga Normal.
-3.  **Provinsi**: Pemetaan efisiensi pengiriman berdasarkan lokasi geografis untuk optimasi logistik.
+Selain mengolah data mentah, saya melakukan proses *feature engineering* untuk menambahkan dimensi analisis baru yang relevan dengan kebutuhan bisnis:
+
+| Nama Kolom | Logika / Rumus | Deskripsi Bisnis |
+| :--- | :--- | :--- |
+| **Waktu Hari** | `=IFS(jam<11,"Pagi",jam<16,"Siang",jam<19,"Sore",jam<=23,"Malam", TRUE,"Dini Hari")` | Mengelompokkan jam transaksi ke dalam 4 zona waktu untuk mengidentifikasi jam operasional paling sibuk (*Peak Hours*). |
+| **is_promo** | `=IF(event_promo="Normal","No Promo","Promo Event")` | Mengidentifikasi transaksi yang terjadi selama periode kampanye besar vs transaksi organik pada harga normal. |
 
 ---
 
