@@ -5,6 +5,12 @@ Proyek ini menganalisis performa penjualan ritel sepanjang tahun 2024 di empat k
 
 ---
 
+## 📊 Dataset Information
+Dataset yang digunakan dalam proyek ini bersumber dari Kaggle yang mencakup data transaksi retail sepanjang tahun 2024. Dataset ini telah melalui tahap pembersihan (*data cleaning*) dan pengayaan (*feature engineering*).
+
+🔗 **Download Dataset:** [Indonesian Retail Sales & Cost Dataset](https://www.kaggle.com/datasets/lycusbendln/indonesian-retail-sales-and-cost-dataset)
+---
+
 ## 🚀 Key Insights
 *   **💰 Profitability Leader**: Toko Offline menyumbang margin profit tertinggi sebesar **54%**, menjadikannya kanal paling efisien secara biaya.
 *   **👗 Product Hegemony**: Produk dengan identitas "Lokal" dan "Batik" (seperti *Dress Batik Modern*) mendominasi Top 5 Best-Seller, membuktikan kekuatan *Cultural Power* di pasar Indonesia.
@@ -22,6 +28,28 @@ Berdasarkan analisis data di atas, berikut adalah rekomendasi strategis untuk me
 3. **Strategi Stok Produk Lokal:** Terus kembangkan varian produk berbasis batik/lokal karena terbukti memiliki *product-market fit* yang kuat dan menjadi *top contributor* profit di semua kanal.
 4. **Logistics Cost Management:** Untuk pengiriman ke luar Jawa (Tier 3), disarankan untuk menaikkan ambang batas "Gratis Ongkir" guna menutupi rata-rata biaya kirim yang mencapai Rp26.000 agar tidak menggerus margin produk.
 5. **Konversi Non-Member:** Segmen Non-Member menyumbang profit besar (Rp5,6M). Perusahaan perlu meluncurkan kampanye *membership* yang agresif (misal: diskon pertama untuk member) untuk mengubah pembeli organik menjadi pelanggan setia.
+
+---
+
+### 🧱 Data Dictionary & Preparation
+Berikut adalah rincian kolom yang terdapat dalam dataset ini, termasuk kolom hasil *Feature Engineering* (ditandai dengan ⭐):
+
+| Kolom | Deskripsi | Tipe Data |
+| :--- | :--- | :--- |
+| **order_id** | ID unik untuk setiap transaksi. | String/ID |
+| **tanggal_transaksi** | Waktu terjadinya transaksi. | DateTime |
+| **channel_penjualan** | Kanal transaksi (Toko, Shopee, Tokopedia, Website). | Category |
+| **nama_produk** | Nama produk retail lokal. | String |
+| **qty** | Jumlah item terjual. | Integer |
+| **harga_list** | Harga normal produk (sebelum diskon). | Currency |
+| **harga_jual** | Harga jual akhir ke pelanggan. | Currency |
+| **total_penjualan** | Total nilai pendapatan per transaksi. | Currency |
+| **total_biaya** | Total beban (Produksi + Kirim + Platform). | Currency |
+| **profit** | Keuntungan bersih per transaksi. | Currency |
+| **metode_pembayaran**| Metode yang digunakan (Kartu Kredit, QRIS, dll). | Category |
+| **event_promo** | Status kampanye promosi. | String |
+| **Waktu Hari** ⭐ | **[Feature Engineering]** Kategorisasi jam transaksi (Pagi-Malam). | Category |
+| **is_promo** ⭐ | **[Feature Engineering]** Status promo vs transaksi organik. | Category |
 
 ---
 
